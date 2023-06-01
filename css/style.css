@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 25px;
+  color: white;
+}
+
+li {
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 25px;
+  color: white;
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background:#323246;
+}
+
+.wrapper {
+  position: relative;
+  width: 1000px;
+  height: 508px;
+}
+
+.main-selection {
+  margin: 20px;
+  display: flex;
+}
+
+.linked {
+  position: absolute;
+  top: 0px;
+  right: 45px;
+  width: 35px;
+  height: 35px;
+  background: black;
+  border-radius: 5px;
+}
+
+.linked-item {
+  position: relative;
+  overflow: hidden;
+  height: 35px;
+  filter: invert(70%);
+  transform: scale(0.8);
+}
+
+.linked-item img {
+  transition: transform 0.5s ease-in-out;
+  max-width: 100%;
+  height: auto;
+}
+
+.linked-item:hover {
+  transform: scale(1);
+}
+
+.text1 {
+  font-size: 16px;
+  padding: 20px;
+}
+
+.text2 {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.text1-selection {
+  margin: 10px;
+  margin-right: 115px;
+  background:#272736;
+}
+
+.list-selection {
+  margin: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.list-info1,
+.list-info2,
+.list-info3,
+.list-info4 {
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: normal;
+  margin: 5px 0 5px 5px;
+  padding: 10px;
+  background: #272736;
+  color: #fff;
+  flex: 1;
+}
+
+.list-info1::before {
+  content: attr(data-letter);
+  color: rgb(84, 129, 150);
+  font-weight: bold;
+  display: inline-block;
+}
+
+.list-info3::before {
+  content: attr(data-letter);
+  color: rgb(84, 129, 150);
+  font-weight: bold;
+  display: inline-block;
+}
+
+.list-info1,
+.list-info2,
+.list-info3,
+.list-info4 {
+  display: flex;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.list-info1 {
+  height: 50px;
+  width: 150px;
+}
+
+.list-info2 {
+  height: 50px;
+  width: 350px;
+}
+
+.list-info3 {
+  height: 100px;
+  width: 150px;
+}
+
+.list-info4 {
+  height: 100px;
+  width: 350px;
+}
+
+.list-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.profile {
+  position: relative;
+  margin-right: 20px;
+  width: 260px;
+  height: 380px;
+}
+
+.hdrip-block {
+  position: absolute;
+  top: 20px;
+  width: 50px;
+  height: 35px;
+  background: rgba(84, 129, 150, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hdrip-text {
+  font-size: 15px;
+  color: white;
+  margin: 0;
+}
+
+.imdb-block {
+  position: relative;
+  background: #272736;
+  color: #fff;
+  height: 50px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 0 0 5px 5px;
+  flex: 1;
+}
+
+.imdb {
+  width: 35px;
+  height: 35px;
+}
+
+.rating-selection {
+  position: relative;
+  background: #272736;
+  display: flex;
+  margin-right: 20px;
+  width: 260px;
+}
+
+.dislike,
+.like {
+  position: relative;
+  overflow: hidden;
+  height: 35px;
+  transform: scale(0.8);
+}
+
+.rating-info,
+.dislike img,
+.like img {
+  transition: transform 0.5s ease-in-out;
+  max-width: 100%;
+  height: auto;
+}
+
+.rating-info:hover,
+.dislike:hover,
+.like:hover {
+  transform: scale(1);
+}
+
+.rating-info {
+  display: flex;
+  margin: 0 40px 0 40px;
+  transform: scale(0.8);
+}
+
+.rating-gtext {
+  color: #05D723;
+}
+
+.rating-rtext {
+  color: #D70523 ;
+}
+
+.linked2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #272736;
+  margin: 5px 20px 0 0;
+  width: 260px;
+}
+
+.linked-item2 {
+  position: relative;
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: normal;
+  margin: 5px 0 5px 5px;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.play-pause-item {
+  display: block;
+  filter: invert(70%);
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.linked2-wrapper {
+  display: flex;
+  align-items: center;
+  transform: scale(0.8);
+  transition: transform 0.5s ease-in-out;
+  max-width: 100%;
+  height: auto;
+}
+
+.linked2-wrapper:hover {
+  transform: scale(1);
+}
+
+.linked2-wrapper:hover .play-pause-item {
+  z-index: 2;
+}
+
+.linked2-wrapper:hover .linked-item2 {
+  z-index: 1;
+}
